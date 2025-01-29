@@ -4,11 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Collectives</title>
+    <style>
+        tr th,td{
+            padding: 4px;
+        }
+
+        .image img{
+            display: inline-block;
+            width: 70%;
+            mix-blend-mode: multiply;
+        }
+        .image{
+            width: 95%;
+            margin: auto;
+            background: linear-gradient(to right, rgb(223, 93, 93), rgb(96, 84, 84));
+        }
+        /* #watch-cell{
+            background: linear-gradient(black, gray);
+        } */
+    </style>
 </head>
 <body>
     <table 
         frame="border"
         rules="all"
+        style="border: 2px solid gray; padding: 2px;"
         >
         <thead>
             <tr>
@@ -43,11 +63,14 @@
                 </th>
             </tr>
             <tr>
-                <td>
-                    <img
+                <td id="watch-cell">
+                    <div class="image">
+                        <img
                      src="./asset/seikokinetic.jpg"
                      alt="Limited edition ford 1967 mustang"
                      height="150">
+                    </div>
+                    
                 </td>
                 <td>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur quidem voluptate repellat ratione nam. Ipsam nisi fugit a dolorum. Quia, necessitatibus. Eos nulla maiores reiciendis. Perspiciatis, officia, veniam maiores culpa modi adipisci nisi expedita nobis nostrum recusandae amet. Accusantium animi nostrum consequuntur similique illo commodi ullam asperiores blanditiis ducimus placeat!</p>
